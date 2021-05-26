@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbartimkiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3e3ee2">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbartimkiem"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewtimkiem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbartimkiem" />
+
+    <TextView
+        android:id="@+id/textviewtimkiem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Khong Co Du Lieu"
+        android:textColor="#f20"
+        android:textSize="35sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

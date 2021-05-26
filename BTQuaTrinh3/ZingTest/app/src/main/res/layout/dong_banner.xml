@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageviewbackgroundbanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <View
+        android:background="@drawable/custom_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative1"
+        android:layout_alignBottom="@+id/imageviewbackgroundbanner"
+        >
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imageviewbanner"
+            android:padding="2dp"/>
+        <TextView
+            android:id="@+id/textviewnamesong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nàng Thơ"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/imageviewbanner"
+            android:textColor="#fffdfc"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageviewbanner"
+            android:layout_below="@id/textviewnamesong"
+            android:layout_marginTop="7dp"
+            >
+            <TextView
+                android:id="@+id/textviewtitlesong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="Chào mừng bạn đến với ca khúc mới nhất của ca sĩ Hoàng Dũng"
+                android:maxLines="2"
+                android:layout_marginRight="40dp"
+                android:textColor="#fffdfc"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

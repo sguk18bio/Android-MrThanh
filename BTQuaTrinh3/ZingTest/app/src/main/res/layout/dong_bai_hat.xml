@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageviewbaihat"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="3dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/textviewtenbaihat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/imageviewbaihat"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Tên Bài Hát"
+        android:textColor="#363636"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textviewtencasibaihat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewtenbaihat"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/imageviewbaihat"
+        android:text="Tên Ca Sĩ"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#8c8a8a"
+        android:singleLine="true"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/imageviewluotthich"
+        android:src="@drawable/iconlove"/>
+</RelativeLayout>

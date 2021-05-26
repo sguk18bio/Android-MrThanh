@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+android:scrollbars="none">
+<LinearLayout
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <fragment
+        android:id="@+id/fragmentbanner"
+        android:name="com.example.zingtest.Fragment.Fragment_Banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <fragment
+        android:id="@+id/fragmentplaylist"
+        android:name="com.example.zingtest.Fragment.Fragment_Play_List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentchudevatheloai"
+        android:name="com.example.zingtest.Fragment.Fragment_ChuDe_TheLoai"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentalbum"
+        android:name="com.example.zingtest.Fragment.Fragment_Album"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentbaihat"
+        android:name="com.example.zingtest.Fragment.Fragment_Bai_Hat"/>
+</LinearLayout>
+</ScrollView>
